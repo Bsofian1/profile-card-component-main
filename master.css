@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  width: 1440px;
+  height: 770px;
+  max-width: 1440px;
+  font-family: 'Kumbh Sans', sans-serif;
+  flex: 1 1 350px;
+}
+.design{
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+.design img.img-t{
+  position: absolute;
+  top: -50%;
+  left: -25%;
+}
+
+.design img.img-b{
+  position: absolute;
+  bottom: -50%;
+  right: -25%;
+}
+main .card{
+  background-color: white;
+  width: 350px;
+  height: 400px;
+  border-radius: 20px;
+  position: relative;
+
+}
+main .card img.pattern{
+  border-radius: 20px 20px 0 0 ;
+}
+main .card img.profile{
+ position: absolute;
+ border-radius: 50%;
+ border: 2px solid white;
+ top: 100px;
+ left: 125px;
+}
+main .card > h3{
+  margin-top: 75px;
+  text-align: center;
+}
+main .card > h3 span{
+  color: hsl(0, 0%, 59%);
+}
+main .card > p{
+  text-align: center;
+  margin-top: 10px;
+  color: hsl(0, 0%, 59%);
+}
+main .card .metrics{
+  position: absolute;
+  bottom: 0;
+  padding: 30px 0;
+  border-top: 1px solid gray;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+main .card .metrics .box> h3{
+  text-align: center;
+}
+main .card .metrics .box> p{
+  color: hsl(0, 0%, 59%);
+  text-align: center;
+  font-size: 12px;
+}
